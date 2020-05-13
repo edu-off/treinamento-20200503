@@ -42,7 +42,7 @@ public class TreinamentoDao {
 			this.sqlInsert.setString(3, treinamento.getFuncionario().getNome());
 			this.sqlInsert.setString(4, treinamento.getFuncionario().getEmail());
 			this.sqlInsert.setString(5, treinamento.getFuncionario().getArea());
-			System.out.println("SqlInsert " + sqlInsert.toString());
+			System.out.println("1 linha incluida!");
 			this.sqlInsert.executeUpdate();
 		} catch (SQLException e) {
 			System.out.println("Erro ao salvar dados na base de dados!\n" + e.getMessage());
